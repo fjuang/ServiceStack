@@ -490,7 +490,8 @@ namespace ServiceStack
         /// </summary>
         public bool HasFeature(Feature feature)
         {
-            return (feature & Config.EnableFeatures) == feature;
+			return true;
+            // return (feature & Config.EnableFeatures) == feature;
         }
 
         /// <summary>
